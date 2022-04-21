@@ -1,8 +1,10 @@
 # Express-Sequelize-API boilerplate
+
 This is a simple boilerplate for creating APIs with NodeJs express framework.
 Here API access token encapsulated/encrypted with JWT token based system.
 
 ## Getting Started
+
 You can download this repo or clone using below command. (folder-name will be project folder in which you want to start your project).
 ```
 git clone https://github.com/gauravgitgithub/express-restapi-mysql-sequelize-boilerplate.git <folder-name>
@@ -28,14 +30,14 @@ so in my **.env** file will set below parameters.
 DB_HOST=localhost               # database connection host
 DB_USER=root                    # database username
 DB_PASS=secret@123              # database password
-DB_NAME=express-sequelize-api   # database name
+DB_NAME=express-api             # database name
 DB_DIALECT=mysql                # database dialect
 DB_PORT=3306                    # database port
 ```
 some other inportant parameters/keys in **.env** file
 ```
 APP_HOST=localhost      # application host name
-APP_PORT=3000           # application port
+APP_PORT=8000           # application port
 SECRET=secret           # secret key for encrypt/decrypt JWT token
 ```
 
@@ -61,77 +63,14 @@ Seeders will create one new client entry in application and 2 users entry one ad
 `npm start` to run your project 
 >Everythig is setup and you are good to go now. Happy Coding :)
 
+## Detailed Documentation
+>Go through the url below to see the detailed documentation
+>https://documenter.getpostman.com/view/6446110/UyrADw5d
+
 ## Example APIs
 >here attached link of postman collection you can download and check in local
->https://www.getpostman.com/collections/4d415740f37a864d9afc
-
-### Login
-```
-> POST : http:localhost:8000/pub/login   
-> Payload: email, password
-> Response : 
-{
-    "code": 200,
-    "data": {
-        "user": {
-            "id": 1,
-            "firstName": "Admin",
-            "lastName": "User",
-            "email": "admin@gmail.com",
-            "profilePic": null,
-            "isAdmin": true,
-            "verifyToken": null,
-            "isVerified": true,
-            "createdAt": "2019-05-27T07:15:12.000Z",
-            "updatedAt": "2019-05-27T07:15:12.000Z"
-        },
-        "token": "secret token"
-    },
-    "success": true
-}
-```
-### Get user
-```
-> GET : http:localhost:8000/api/me   
-> Headers : 
-        x-token (access token)
-> Response : 
-{
-    "code": 200,
-    "data": {
-        "user": {
-            "id": 1,
-            "firstName": "Admin",
-            "lastName": "User",
-            "email": "admin@gmail.com",
-            "profilePic": null,
-            "isVerified": true,
-            "createdAt": "2019-05-27T07:15:12.000Z",
-            "updatedAt": "2019-05-27T07:15:12.000Z"
-        }
-    },
-    "success": true
-}
-```
-### Success Response
-```
-{
-    "success": true,
-    "code": 200,
-    "data": "object or array"
-}
-```
-### Error Response
-```
-{
-    "success": false,
-    "code": 500,
-    "errorMessage": "Incorrect Email Id/Password",
-    "error": {},
-    "data": null
-}
-```
+>https://www.postman.com/collections/a98570e3a8e37582b5f6
 
 ### Contact 
-* Follow [@me](https://www.linkedin.com/in/gauravrajsinha/) on LinkedIn 
+* Connect with [@me](https://www.linkedin.com/in/gauravrajsinha/) on LinkedIn 
 * Email <gauravraj.1998.sinha@gmail.com>
