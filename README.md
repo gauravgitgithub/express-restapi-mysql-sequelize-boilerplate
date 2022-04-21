@@ -1,20 +1,15 @@
 # Express-Sequelize-API boilerplate
 This is a simple boilerplate for creating APIs with NodeJs express framework.
 Here API access token encapsulated/encrypted with JWT token based system.
- - Sample API ready for login 
- - API middlewares for normal user and Admin user
- - ES6 import/export available to the user with spread operators
- - Deploy your app with cluster (cluster implementation is integrated)
- - jest test configured
- - add test case for mock database model/functions to test controllers functions
+
 ## Getting Started
 You can download this repo or clone using below command. (folder-name will be project folder in which you want to start your project).
 ```
-git clone https://github.com/binitghetiya/express-sequelize-api-boilerplate.git <folder-name>
+git clone https://github.com/gauravgitgithub/express-restapi-mysql-sequelize-boilerplate.git <folder-name>
 ```
 or from **Download Zip**
 ```
-https://github.com/binitghetiya/express-sequelize-api-boilerplate 
+https://github.com/gauravgitgithub/express-restapi-mysql-sequelize-boilerplate.git
 ```
 ### Project Setup
 Once you clone or download project go into you folder
@@ -27,7 +22,7 @@ Once you clone or download project go into you folder
 ```
 
 ### Database Config Setup
-Create new database (let's say i'm going to use mysql and my database name is **express-sequelize-api**).
+Create new database (let's say i'm going to use mysql and my database name is **express-api**).
 so in my **.env** file will set below parameters.
 ```
 DB_HOST=localhost               # database connection host
@@ -66,35 +61,6 @@ Seeders will create one new client entry in application and 2 users entry one ad
 `npm start` to run your project 
 >Everythig is setup and you are good to go now. Happy Coding :)
 
-
-
-# Other Information about setup/commands
-## Useful terminal commands
-```
-> node_modules/.bin/sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string
-> node_modules/.bin/sequelize db:migrate
-> node_modules/.bin/sequelize db:migrate:undo
-> node_modules/.bin/sequelize db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
-> node_modules/.bin/sequelize seed:generate --name demo-user
-```
-
-## Git/Bitbucket Setup
-```
-> rm -rf .git  (Remove git folder so you can use your own git/bitbucket)
-```
-## Middlewares
-```
-> ApiAuth this will check user access token that we have return in login response.
-> AdminAuth this will check admin auth and it's access.
-```
-
-## Routing files
-> Currently we have added 3 routing files 
-```
-> pub.js   # public routing access everyone can access this APIs
-> api.js   # only logged in user/ with vaild token user can access this routes
-> admin.js # only admin can access with valid token
-```
 ## Example APIs
 >here attached link of postman collection you can download and check in local
 >https://www.getpostman.com/collections/4d415740f37a864d9afc
@@ -165,11 +131,7 @@ Seeders will create one new client entry in application and 2 users entry one ad
     "data": null
 }
 ```
-### Upcoming update
-```
-> suggestions and improvements are most welcome
-```
 
 ### Contact 
-* Follow [@me](https://twitter.com/binitghetiya) on Twitter
-* Email <binitlearning@gmail.com>
+* Follow [@me](https://www.linkedin.com/in/gauravrajsinha/) on LinkedIn 
+* Email <gauravraj.1998.sinha@gmail.com>
